@@ -2,11 +2,9 @@
 
 Find developer profile on Github
 
-
-
 ## What is the App?
 
-- Made with [React](https://github.com/facebook/create-react-app/)
+- Made with [ReactJS](https://github.com/facebook/create-react-app/)
 - This application search for users on github
 - It use the github API to find user profile information
 
