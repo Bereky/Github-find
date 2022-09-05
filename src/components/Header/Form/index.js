@@ -1,9 +1,9 @@
 import { useContext, useState} from "react"
+import { useNavigate } from "react-router-dom";
+import { SearchContext } from "../../../Context/SearchContext";
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import "./index.css"
-import { useNavigate } from "react-router-dom";
-import { SearchContext } from "../../../Context/SearchContext";
 
 const Search = ({myCallBack}) => {
     const [username, setUsername] = useState("");

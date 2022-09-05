@@ -5,7 +5,6 @@ import Home from "../Home";
 import SearchContextProvider from "../../Context/SearchProvider";
 
 const App = () => {
-
     return (
         <SearchContextProvider>
             <Router>

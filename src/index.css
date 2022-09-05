@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #b3b1b17d;
+  background-color: #ecebeb7d;
 }
 
 
@@ -12,7 +12,7 @@ body{
   display: flex;
   background-color: #282634;
   opacity: .8;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   transition: 1s;

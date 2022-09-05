@@ -1,7 +1,10 @@
 .error {
     height: 100px;
     width: 80%;
-    background-color: #e2e2e27d;
+    background-color: #ffffff7d;
+    border-radius: 20px;
+    box-shadow: 0px 4px 9px -7px;
+
   }
   
   .error h3 {
