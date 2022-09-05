@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react';
+import { useState, useEffect, Fragment} from 'react';
 import Header from "../Header/index"
 import Profile from '../Profile/index';
 import Error from '../Error/index';
@@ -26,12 +26,12 @@ const Home = () => {
   useEffect(() => {}, [fetchStatus]);
   useEffect(() => {}, [show]);
   return (
-    <div className="home">
+    <Fragment>
         <Header mydata={fetchUser}/>
-        {!fetchStatus && <Landing />}
+        {/* {!fetchStatus && <Landing />}
         {fetchStatus&& <Profile myData={profile}/>}
-        {show === false && <Error />}
-    </div>
+        {show === false && <Error />} */}
+    </Fragment>
   );
 }
 

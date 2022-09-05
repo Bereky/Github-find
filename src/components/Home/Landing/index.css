@@ -1,0 +1,45 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+  }
+  
+  .heading {
+    color: #282634;
+    font-size: 8vw;
+    margin: 0;
+  }
+  
+  .description {
+    color: #282634;
+    font-size: 2.2vw;
+    margin: 30px auto;
+  }
+  
+  .animation-container {
+    height: 2px;
+    width: 200px;
+    background-color: #101011;
+    margin: 0px;
+  
+    animation-name: landingAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+  }
+  
+  @keyframes landingAnimation {
+    0% {
+      width: 200px;
+    }
+    50% {
+      width: 400px;
+    }
+   
+    100% {
+      width: 200px;
+    }
+  }
