@@ -28,9 +28,9 @@ const Home = () => {
   return (
     <Fragment>
         <Header mydata={fetchUser}/>
-        {/* {!fetchStatus && <Landing />}
+        <Landing />
         {fetchStatus&& <Profile myData={profile}/>}
-        {show === false && <Error />} */}
+        {show === false && <Error />}
     </Fragment>
   );
 }

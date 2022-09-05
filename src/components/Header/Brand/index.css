@@ -1,20 +1,10 @@
   
-  .brand {
-    height: 100%;
-    min-width: 200px;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-  
   .brand-name {
     text-align: center;
     text-decoration: none;
     color: aliceblue;
     width: 200px;
-    font-size: 27px;
+    font-size: 35px;
     font-weight:bolder;
     cursor: pointer;
   }
