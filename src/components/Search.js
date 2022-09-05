@@ -24,7 +24,7 @@ const Search = ({myCallBack}) => {
         <div className="section">
                 <form onSubmit={fetchUserData} className="search-bar" >
                     <input value={username} onChange={updateUsername} type="text" placeholder="Enter github username" className="search-input" required/>
-                    <span className="search-icon"><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-search-thin.png" className="icon" /></span>
+                    <span className="search-icon"><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-search-thin.png" className="icon" alt="search_icon"/></span>
                 </form> 
         </div>
      );

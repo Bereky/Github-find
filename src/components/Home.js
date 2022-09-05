@@ -31,7 +31,7 @@ const App = () => {
         <Nav mydata={fetchUser}/>
         {!fetchStatus && <Landing />}
         {fetchStatus&& <Profile myData={profile}/>}
-        {show ==false && <Error />}
+        {show === false && <Error />}
     </div>
   );
 }
