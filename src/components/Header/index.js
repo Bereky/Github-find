@@ -1,18 +1,13 @@
-import Search from "./Search";
-import "./index.css"
+import Form from "./Form";
 import Brand from "./Brand";
 import Github from "./Github";
+import "./index.css"
 
-const Nav = ({mydata}) => {
-    const  fetchData = (data) => {
-        mydata(data);
-        console.log(data)
-    }
-
+const Nav = () => {
     return ( 
         <nav className="nav">
             <Brand />
-            <Search myCallBack={fetchData}/>
+            <Form/>
             <Github />
         </nav>
      );

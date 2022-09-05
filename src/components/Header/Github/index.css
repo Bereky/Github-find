@@ -5,3 +5,17 @@
     justify-content: center;
     align-items: center;
   }
+
+  .link-img {
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+    border-radius: 25px;
+    color: #e0e0e0;
+    transition: .5s;
+  }
+  
+  .link-img:hover {
+    box-shadow: 1px 1px 6px 0px;
+    border-radius: 20px;
+  }

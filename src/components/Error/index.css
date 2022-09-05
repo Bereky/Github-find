@@ -1,39 +1,11 @@
 .error {
-    height: 150px;
-    width: 250px;
-    position: absolute;
-    left: 0;
+    height: 100px;
+    width: 80%;
     background-color: #e2e2e27d;
-    display: flex;
-    transition: 1s;
-  
-    animation-name: ErrorAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
   }
   
   .error h3 {
     margin: auto;
-    color: brown;
-  }
-  
-  @keyframes ErrorAnimation {
-    
-    0%{
-      top: -250px;
-    }
-  
-    50% {
-      top: 60px;
-    }
-    75% {
-      top: 60px;
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
+    color: rgb(23, 23, 23);
   }
   

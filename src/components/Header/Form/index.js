@@ -1,36 +1,32 @@
-import { useState} from "react"
+import { useContext, useState} from "react"
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import "./index.css"
+import { useNavigate } from "react-router-dom";
+import { SearchContext } from "../../../Context/SearchContext";
 
 const Search = ({myCallBack}) => {
     const [username, setUsername] = useState("");
+    const navigate =  useNavigate()
+    const searchQuery = useContext(SearchContext)
 
     const updateUsername = (e) => {
         setUsername(e.target.value);
     }
 
-    const fetchUserData = async (e) => {
-        const URL = `https://api.github.com/users/${username}`;
+    const submitForm = async (e) => {
         e.preventDefault();
-
-        /* fetch(URL)
-        .then((res) => res.json())
-        .then((res) => {
-            myCallBack(res);
-            console.log(res)
-        })
-        .catch(err => console.log(err)) */
-
-        console.log("search")
+        searchQuery.setQuery(username)
+        navigate("/search")
     }
+
 
     return (
         <div className="d-flex justify-content-center align-items-center position-relative search-form m-auto">
-            <form onSubmit={fetchUserData} className="d-flex w-100 h-100" >
+            <form onSubmit={submitForm} className="d-flex w-100 h-100" >
                 <input value={username} onChange={updateUsername} type="text" placeholder="Enter github username" className="search-input " required/>
                 <IconButton className="position-absolute search-button" type="submit">
-                    <SearchIcon />
+                    <SearchIcon fontSize="large"/>
                 </IconButton>
             </form> 
         </div>

@@ -1,9 +1,9 @@
 import "./index.css";
 
-const Error = () => {
+const Error = (props) => {
     return ( 
-        <div className="error">
-            <h3>Profile Not Found!</h3>    
+        <div className="error d-flex justify-content align-items-center mt-4 m-auto">
+            <h3>No results found for "{props.query}"</h3>    
         </div>
      );
 }
