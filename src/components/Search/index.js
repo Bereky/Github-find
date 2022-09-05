@@ -16,16 +16,17 @@ const Search = ({myCallBack}) => {
         .then((res) => res.json())
         .then((res) => {
             myCallBack(res);
+            console.log(res)
         })
         .catch(err => console.log(err))
     }
 
     return (
         <div className="section">
-                <form onSubmit={fetchUserData} className="search-bar" >
-                    <input value={username} onChange={updateUsername} type="text" placeholder="Enter github username" className="search-input" required/>
-                    <span className="search-icon"><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-search-thin.png" className="icon" alt="search_icon"/></span>
-                </form> 
+            <form onSubmit={fetchUserData} className="search-bar" >
+                <input value={username} onChange={updateUsername} type="text" placeholder="Enter github username" className="search-input" required/>
+                <button className="search-icon" type=""><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-search-thin.png" className="icon" alt="search_icon"/></button>
+            </form> 
         </div>
      );
 }

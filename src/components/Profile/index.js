@@ -10,12 +10,14 @@ const Profile = ({myData}) => {
                 <div className='avatar'>
                     <img src={myData.avatar_url} className="avatar-img" alt="avatar" />
                 </div>
+            </div>
+        
                 <div className="profile-data">
                     <div className="main-data">
                         <div className="name">
                             <h1>{myData.name}</h1>
                             <h2><code>@{myData.login}</code></h2>
-                            <div className="location">
+                            <div cl5ssName="location">
                                 <img src='https://icon-library.com/images/geolocation-icon-png/geolocation-icon-png-29.jpg' className='geo-icon' alt="geo_icon"/>
                                 <span className='geo-label'>{myData.location? (myData.location): (<p>Unavailable</p>)}</span>
 
@@ -40,11 +42,8 @@ const Profile = ({myData}) => {
                             <div className='info info-number'>{myData.public_repos}</div>
                             <div className='info info-head'>Repositories</div>
                         </div>
-
-
                     </div>
                 </div>
-            </div>
         </div>
      );
 }

@@ -1,12 +1,11 @@
 import { useState, useEffect} from 'react';
-import '../App.css';
-import Nav from "./Nav"
-import Profile from './Profile';
-import Error from './Error';
-import Landing from './Landing';
+import Header from "../Header/index"
+import Profile from '../Profile/index';
+import Error from '../Error/index';
+import Landing from './Landing/index';
 
 
-const App = () => {
+const Home = () => {
   const [profile, setProfile] = useState();
   const [fetchStatus, setFetchStatus] = useState(false)
   const [show, setShow] = useState(null);
@@ -28,7 +27,7 @@ const App = () => {
   useEffect(() => {}, [show]);
   return (
     <div className="home">
-        <Nav mydata={fetchUser}/>
+        <Header mydata={fetchUser}/>
         {!fetchStatus && <Landing />}
         {fetchStatus&& <Profile myData={profile}/>}
         {show === false && <Error />}
@@ -36,4 +35,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Home;
