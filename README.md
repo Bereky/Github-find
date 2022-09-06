@@ -1,17 +1,66 @@
 # GITHUB FIND
 
-## What is the App?
+Search and display a mini profile by analyzing a profile from github [API](https://api.github.com)
 
-- This application search for users on github
-- It use the github API to find user profile information
-- Made with [ReactJS](https://github.com/facebook/create-react-app/)
-- Preview the site [HERE](https://dreamy-otter-ed3b13.netlify.app)
+# Getting started
 
-## How to run
-- After cloning the repository
-  ```sh
-  cd Github-find
-  npm install
-  npm start
-  ```
-  
+To run the application:
+
+- clone this repo
+- <code>npm install</code> to install all required dependencies
+- <code>npm start</code> to start the app
+
+# Overview
+
+## Structure
+
+```
+├── build
+├── node_modules (.gitignore)
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+├── src
+│   ├── app
+│   │   └── index.js
+│   ├── asset
+│   │   └── github-find.png
+│   ├── components
+│   │   ├── Error
+│   │   │   ├── index.css
+│   │   │   └── index.js
+│   │   └── Header
+│   │   │   ├── Brand
+│   │   │   │   ├── index.css
+│   │   │   │   └── index.js
+│   │   │   ├── Form
+│   │   │   │   ├── index.css
+│   │   │   │   └── index.js
+│   │   │   ├── Github
+│   │   │   │   ├── index.css
+│   │   │   │   └── index.js
+│   │   │   ├── index.css
+│   │   │   └── index.js
+│   │   ├── Home
+│   │   │   ├── index.css
+│   │   │   └── index.js
+│   │   ├── Profile
+│   │   │   ├── index.css
+│   │   │   └── index.js
+│   │   ├── Search
+│   │   │   ├── index.css
+│   │   │   └── index.js
+│   ├── Context
+│   │   ├── SearchContext.js
+│   │   └── SearchProvider.js
+│   ├── index.css
+│   └── index.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
+
+## Dependencies
+
+- [Nodejs](https://nodejs.org/en/)
