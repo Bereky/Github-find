@@ -1,8 +1,8 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import Header from '../Header/index'
-import Search from "../Search/index";
-import Home from "../Home";
-import SearchContextProvider from "../../Context/SearchProvider";
+import Header from '../components/Header/index'
+import Search from "../components/Search/index";
+import Home from "../components/Home";
+import SearchContextProvider from "../Context/SearchProvider";
 
 const App = () => {
     return (
