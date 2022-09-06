@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import Header from '../components/Header/index'
+import Header from '../components/Header/index';
 import Search from "../components/Search/index";
 import Home from "../components/Home";
 import SearchContextProvider from "../Context/SearchProvider";
@@ -10,8 +10,9 @@ const App = () => {
             <Router>
                 <Header />
                 <Routes>
-                    <Route index path="/" element={<Home />}/>
-                    <Route path="/search" element={<Search />}/>
+                    <Route path="/" element={<Home />}>
+                        <Route path="/search" element={<Search />}/>
+                    </Route>
                 </Routes>
             </Router>
         </SearchContextProvider>

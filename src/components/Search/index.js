@@ -10,8 +10,8 @@ import axios from 'axios';
 const Search = () => {
     const searchQuery = useContext(SearchContext)
     const [ searchParams, setSearchParams ] = useSearchParams()
-    const [ profileInfo, setProfileInfo ] = useState()
-    const [ loading, setLoading ] = useState()
+    const [ profileInfo, setProfileInfo ] = useState('')
+    const [ loading, setLoading ] = useState(false)
     const [error, setError ] = useState()
 
     let search = {
@@ -41,7 +41,6 @@ const Search = () => {
     return ( 
         <div className='d-flex justify-content-center flex-column align-items-center search'>
             {loading && <ReactLoading type='bars' color='#353536' height={300} width={100} className='h-100 m-auto'/>}
-            {/* <Loading /> */}
             {profileInfo && <Profile myData={profileInfo}/>}
             {error && <Error query={search.q}/>} 
         </div>
