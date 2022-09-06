@@ -27,7 +27,7 @@ const Profile = ({myData}) => {
                         </div>
                         <div>
                             <div className="links">
-                                <a href={myData.html_url} >
+                                <a href={myData.html_url}>
                                     <IconButton>
                                         <GitHubIcon fontSize='large' sx={{color: "white"}}/>
                                     </IconButton>
@@ -42,7 +42,6 @@ const Profile = ({myData}) => {
                                         <TwitterIcon  fontSize='large' sx={{color: "white"}}/>
                                     </IconButton>
                                 </a>
-                                {/* <a href={twitter} className="twitter"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384033.png" className="link-img" alt="twitter_icon" /></a> */}
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,6 @@ import { useSearchParams } from 'react-router-dom';
 import { SearchContext } from '../../Context/SearchContext';
 import Error from '../Error/index'
 import ReactLoading from 'react-loading';
-import Loading from '../Helper/Loading'
 import Profile from '../Profile/index'
 import './index.css'
 import axios from 'axios';
@@ -16,7 +15,7 @@ const Search = () => {
     const [error, setError ] = useState()
 
     let search = {
-        q: searchQuery.query
+        q: searchQuery.query,
     }
 
     useEffect(() => {
@@ -24,7 +23,7 @@ const Search = () => {
         setError(false)
         setLoading(true)
         setProfileInfo('')
-        
+
         axios.get(`https://api.github.com/users/${search.q}`)
             .then((res) => {
                 setProfileInfo(res.data)
