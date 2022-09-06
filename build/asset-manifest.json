@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ghfind/static/css/main.22732020.css",
+    "main.js": "/ghfind/static/js/main.c13a1b3f.js",
+    "index.html": "/ghfind/index.html",
+    "main.22732020.css.map": "/ghfind/static/css/main.22732020.css.map",
+    "main.c13a1b3f.js.map": "/ghfind/static/js/main.c13a1b3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22732020.css",
+    "static/js/main.c13a1b3f.js"
+  ]
+}
