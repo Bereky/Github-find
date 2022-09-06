@@ -6,7 +6,6 @@ import { IconButton } from '@mui/material';
 import './index.css';
 
 const Profile = ({myData}) => {
-
     return ( 
         <div className="profile-container">
             <div className="profile">
