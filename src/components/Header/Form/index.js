@@ -24,7 +24,7 @@ const Search = ({myCallBack}) => {
     return (
         <div className="d-flex justify-content-center align-items-center position-relative search-form m-auto">
             <form onSubmit={submitForm} className="d-flex w-100 h-100" >
-                <input value={username} onChange={updateUsername} type="text" placeholder="Enter github username" className="search-input " required/>
+                <input value={username} onChange={updateUsername} type="text" placeholder="Enter github username eg: bereky" className="search-input " required/>
                 <IconButton className="position-absolute search-button" type="submit">
                     <SearchIcon fontSize="large"/>
                 </IconButton>

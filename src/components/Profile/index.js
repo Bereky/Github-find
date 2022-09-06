@@ -3,12 +3,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { IconButton } from '@mui/material';
-import { Link } from 'react-router-dom';
 import './index.css';
 
 const Profile = ({myData}) => {
-
-    const twitter = `https://twitter.com/${myData.twitter_username}`
 
     return ( 
         <div className="profile-container">
@@ -23,28 +20,28 @@ const Profile = ({myData}) => {
                         <div className="name">
                             <h1 className="name_main my-2">{myData.name}</h1>
                             <h2 className="username my-2"><code>@{myData.login}</code></h2>
-                            {/* <div className="location my-3">
+                            <div className="location my-3">
                                 <LocationOnIcon fontSize='large' sx={{color: "white"}}/>
                                 <span className='geo-label'>{myData.location? (myData.location): (<p>Unavailable</p>)}</span>
-                            </div> */}
+                            </div>
                         </div>
                         <div>
                             <div className="links">
-                                <Link to={myData.html_url} >
-                                    <IconButton className="link-icon">
+                                <a href={myData.html_url} >
+                                    <IconButton>
                                         <GitHubIcon fontSize='large' sx={{color: "white"}}/>
                                     </IconButton>
-                                </Link>
-                                <Link to={myData.blog} >
-                                    <IconButton className="link-icon">
+                                </a>
+                                <a href={`https://${myData.blog}`} >
+                                    <IconButton>
                                         <PublicIcon fontSize='large' sx={{color: "white"}}/>
                                     </IconButton>
-                                </Link>
-                                <Link to={twitter} >
-                                    <IconButton className="link-icon">
+                                </a>
+                                <a href={`https://twitter.com/${myData.twitter_username}`} >
+                                    <IconButton>
                                         <TwitterIcon  fontSize='large' sx={{color: "white"}}/>
                                     </IconButton>
-                                </Link>
+                                </a>
                                 {/* <a href={twitter} className="twitter"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384033.png" className="link-img" alt="twitter_icon" /></a> */}
                             </div>
                         </div>

@@ -24,6 +24,7 @@ const Search = () => {
         setError(false)
         setLoading(true)
         setProfileInfo('')
+        
         axios.get(`https://api.github.com/users/${search.q}`)
             .then((res) => {
                 setProfileInfo(res.data)

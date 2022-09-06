@@ -58,7 +58,7 @@
   
   .name{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     margin: auto 40px;
     height: 100%;
@@ -102,7 +102,7 @@
   .location {
     display: flex;
     flex-direction: row;
-    width: 170px;
+    width: auto;
   }
   
   .geo-icon {
@@ -121,13 +121,11 @@
     height: 45px;
     width: 45px;
     border-radius: 25px;
-    color: #e0e0e0;
-    transition: .5s;
+    transition: .2s;
   }
   
   .link-icon:hover {
-    border-radius: 20px;
-    box-shadow: 1px 1px 6px 0px;
+    background-color: #282634;
 
   }
   
