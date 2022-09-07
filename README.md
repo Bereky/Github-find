@@ -2,6 +2,10 @@
 
 Search and display a mini profile by analyzing a profile from github [API](https://api.github.com)
 
+# Demo
+
+Preview the project with [Live demo](https://eclectic-hamster-b6841d.netlify.app)
+
 # Getting started
 
 To run the application:
