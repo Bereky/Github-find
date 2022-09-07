@@ -6,11 +6,11 @@ import './index.css'
 const Github = () => {
     return ( 
         <div className="github-icon h-100 m-auto">
-            <Link to="https://www.github.com/bereky" >
+            <a href="https://www.github.com/bereky">
                 <IconButton className="git-icon">
                     <GitHubIcon fontSize='large' sx={{color: "white"}}/>
                 </IconButton>
-            </Link>
+            </a>
         </div>
      );
 }
