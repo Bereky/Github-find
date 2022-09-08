@@ -1,6 +1,6 @@
 # GITHUB FIND
 
-Search and display a mini profile by analyzing a profile from github [API](https://api.github.com)
+Github profile search engine where you can get mini analyzed profile from github [API](https://api.github.com)
 
 # Demo
 
