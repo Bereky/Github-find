@@ -6,14 +6,6 @@ Github profile search engine where you can get mini analyzed profile from github
 
 Preview the project with [Live demo](https://eclectic-hamster-b6841d.netlify.app)
 
-# Getting started
-
-To run the application:
-
-- clone this repo
-- <code>npm install</code> to install all required dependencies
-- <code>npm start</code> to start the app
-
 # Overview
 
 ## Structure
@@ -65,6 +57,18 @@ To run the application:
 └── README.md
 ```
 
+# Getting started
+
+To run the application:
+
+- clone this repo
+- <code>npm install</code> to install all required dependencies
+- <code>npm start</code> to start the app
+
 ## Dependencies
 
 - [Nodejs](https://nodejs.org/en/)
+
+## API
+
+[Github API](https://docs.github.com/en/rest)
